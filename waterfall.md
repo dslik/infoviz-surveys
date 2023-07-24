@@ -16,10 +16,17 @@ Different communities have different conventions regarding which axis should be 
 
 Adjusting the range of values displayed in the z axis, or changing the mapping between input values and displayed colours allow for certain features to be emphasized.
 
-## Representative sample
+## Example 1
 
 The below waterfall display is from the [SatNOGS - Satellite Network Open Ground Station](https://satnogs.org) project. It displays frequency on the x axis, time on the y axis, and signal intensity in dB as a colour gradient.
 
 ![image](https://github.com/dslik/infoviz-surveys/assets/5757591/9248596a-87f1-40db-9ed1-54f1c17803f5)
 
 Axis labels for all three dimensions are provided, two aligned with the waterfall display, with intensity displayed on the side.
+
+### Commentary
+
+This is a clean and basic waterfall display. The selection of display colours allows both the noise level and the received signal to be clearly seen. Selection of colour gradients is a challenging process, and has extensive research for elevation maps. See [Good Colour Maps: How to Design Them. arXiv:1509.03700 [cs.GR] 2015](https://peterkovesi.com/projects/colourmaps/) for an introduction.
+
+This waterfall display will act as a baseline for further discussion.
+
