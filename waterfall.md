@@ -34,7 +34,7 @@ This waterfall display will act as a baseline for further discussion.
 
 ## Example 2
 
-The below waterfall display is from the [SDR Data File Analyzer](https://www.sdr-radio.com/analyser). It displays frequency on the x axis, time on the y axis, and signal intensity in dBm as a grey scale gradient.
+The below waterfall display is a screenshot from the [SDR Data File Analyzer](https://www.sdr-radio.com/analyser) software. It displays frequency on the x axis, time on the y axis, and signal intensity in dBm as a grey scale gradient.
 
 ![image](https://github.com/dslik/infoviz-surveys/assets/5757591/f2e19d96-eeb2-4ee0-86a7-e3001e46d0ef)
 
@@ -62,16 +62,30 @@ Displaying the time grid lines using dashes, with the time values inside the wat
 
 As contentious as the axis debate is, and as strange as it is to see the freqency chart turned on its side, I prefer this axis arrangement, as it allows the waterfall display to be be aligned with other time series, as seen here.
 
-
 ## Example 4
 
 The below waterfall display is from an unknown source. It displays time on the x axis, frequency on the y axis, and signal intensity in dB as a colour gradient. A correlated chart showing noise amplitude is shown above the waterfall display.
 
-![Unsaved Preview Document 157](https://github.com/dslik/infoviz-surveys/assets/5757591/e28e306b-7846-408b-af2c-bae991d7998c)
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/e28e306b-7846-408b-af2c-bae991d7998c)
 
 Axis labels for all three dimensions are provided, two aligned with the waterfall display, with intensity displayed to the right of the waterfall display region.
 
 ### Commentary
 
-The creators of this waterfall missed an opportunity to align the noise amplitude chart with the waterfall display. Likewise, the indicators of conditions (weekend, lockdown, etc) could have been shown as a series of strip charts.
+The creators of this waterfall missed an opportunity to align the noise amplitude chart with the waterfall display. Likewise, the indicators of conditions (weekend, lockdown, etc) could have been shown as a series of strip charts. This highlights important use cases for correlated data display.
+
+## Example 5
+
+The below waterfall display is a screenshot from the [SDR Console](https://www.sdr-radio.com/console) software, version 3. It displays frequency on the x axis, time on the y axis, and signal intensity (with units not displayed) as a colour gradient, with the upper and lower bounds mapped to the ends of the colour gradient being adjustable.
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/c31edb0e-a9db-4a5b-bb6b-8a41a72b5c86)
+
+Axis labels for all three dimensions are provided, two aligned with the waterfall display, with intensity displayed outside the waterfall display region on the far right.
+
+### Commentary
+
+This shows the more traditional instantaneous frequency intensity on top arrangement. It is also a good example of a "frequency region of interest" selection, shown in green highlighting on the far upper right. Having the region of interest being highlighted down the entire waterfall would be better, as it allows the entire region of interest to be easily visually identified.
+
+A second region is shown overlayed on the x axis (frequency) at the bottom of the screen, which indicates which region is being recorded.
+
 
