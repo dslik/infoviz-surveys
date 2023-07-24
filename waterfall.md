@@ -59,3 +59,19 @@ Axis labels for all three dimensions are provided, two aligned with the waterfal
 The small intensity legend obscures far less information than in example 2, but I still prefer this to be placed outside of the waterfall display region.
 
 Displaying the time grid lines using dashes, with the time values inside the waterfall display region is easily to read and saves space, especially with longer date-time strings. This works best when the size of the waterfall display region is large.
+
+As contentious as the axis debate is, and as strange as it is to see the freqency chart turned on its side, I prefer this axis arrangement, as it allows the waterfall display to be be aligned with other time series, as seen here.
+
+
+## Example 4
+
+The below waterfall display is from an unknown source. It displays time on the x axis, frequency on the y axis, and signal intensity in dB as a colour gradient. A correlated chart showing noise amplitude is shown above the waterfall display.
+
+![Unsaved Preview Document 157](https://github.com/dslik/infoviz-surveys/assets/5757591/e28e306b-7846-408b-af2c-bae991d7998c)
+
+Axis labels for all three dimensions are provided, two aligned with the waterfall display, with intensity displayed to the right of the waterfall display region.
+
+### Commentary
+
+The creators of this waterfall missed an opportunity to align the noise amplitude chart with the waterfall display. Likewise, the indicators of conditions (weekend, lockdown, etc) could have been shown as a series of strip charts.
+
