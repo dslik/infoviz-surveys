@@ -1,18 +1,18 @@
 # Overview
 
-Waterfall visualizations (more generally known as spectrograms) represent three dimensions of information as an image on a 2D plane, where one of the dimensions is time.
+Waterfall visualizations (more generally known as spectrograms) represent three dimensions of information as an image on a 2D plane, where one of the dimensions is time, a second is frequency, and the third is intensity, polarization, direction, or a difference or calculation across multiple signals.
 
 Axis are typically:
 
 * x axis: time or frequency
 * y axis: frequency or time
-* z axis: signal intensity as grayscale or a colour spectrum
+* z axis: signal intensity represented as a mapping to a grayscale or colour spectrum
 
-The x and y axis can be panned to move backwards and forward in time and in frequency space. Often the edge of the display is set to the current time, with the data scrolling to the side or down over time, resulting in the characteristic resemblance to a waterfall.
+The x and y axis can be panned to move backwards and forward in time and in frequency space. Often the edge of the display is set to the current time, with the data moving either to the left or bottom over time. It is this movement of data down the screen as new values are added to the top that resulting in the resemblance to a waterfall, which is the origin of the name of the visualization technique.
 
 Zooming in or out allows a larger or smaller region of time and frequency to be displayed. Alternatively, the visible area
 
-Different communities have different conventions regarding which axis should be used for which variable. For example, radio astronomy tends to put time on the x axis, while radio engineering tends to put frequency on the x axis, so that a traditional spectrum analyzer display can be shown above or below the waterfall display.
+Different communities have different conventions regarding which axis should be used for which variable. For example, the radio astronomy and audio analysis communities tends to put time on the x axis, while the ham radio and engineering communities tends to put frequency on the x axis, so that a traditional spectrum analyzer display can be shown above the waterfall display.
 
 Adjusting the range of values displayed in the z axis, or changing the mapping between input values and displayed colours allow for certain features to be emphasized.
 
@@ -138,7 +138,7 @@ The concept of labels allows well-identified features to be identified and annot
 
 ## Example 9 - Regions of Importance
 
-The below annotated waterfall display is a from a blog post by windytan showing a [dialup V.8 bis trasnaction](https://www.windytan.com/2012/11/the-sound-of-dialup-pictured.html). It displays frequency on the y axis, time on the x axis, and signal intensity (with no units displayed) as a colour gradient.
+The below annotated waterfall display is a from a blog post by windytan showing a [dialup V.8 bis transaction](https://www.windytan.com/2012/11/the-sound-of-dialup-pictured.html). It displays frequency on the y axis, time on the x axis, and signal intensity (with no units displayed) as a colour gradient.
 
 Annotations are shown as rectangular regions of interests, with callout lines to more information, resulting in a very professional and informative presentation..
 
@@ -205,6 +205,6 @@ Source: https://k9xn.org/2014/08/28/flex-radio-systems-flex-6500/
 2. The waterfall display region should have a clear border.
 3. I have a preference towards time on the x axis.
 4. Use perceptually uniform colour maps, preferably CET-L20
-5. Grid lines can help, but can also obscure/distort apparant data. Use with care.
-6. Waterfall displays should be combined with other chart types (heat charts, strip charts, flags, etc) as part of a unified visual grammer.
+5. Grid lines can help, but can also obscure/distort adjacent data. Use with care.
+6. Waterfall displays should be combined with other chart types (heat charts, strip charts, flags, etc) as part of a unified visual grammar.
 7. Display of regions of importance should be standardized.
