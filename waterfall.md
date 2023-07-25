@@ -122,6 +122,36 @@ Axis labels for time and frequency, as well as the day in a header block, are in
 
 The importance of a title block that provides clear attribution and the ability to determine the source as part of the image is very important. A summary of key configurations used to capture the data is also helpful for interpretation.
 
+## Example 8
+
+The below waterfall display is a from a second report by AJ4CO on [Sweepers](https://www.aj4co.org/Publications/Sweepers,%20Typinski%20(SARAJ,%202010).pdf). It displays time on the y axis, frequency on the x axis, and signal intensity (with no units displayed) as a colour gradient.
+
+Two signals of interest are annotated using labels.
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/3314cd30-689a-43dd-a463-3c13a0c9e7af)
+
+Axis labels for time and frequency are indicated on the outside of the waterfall display region with arrow pointers. No intensity legend is provided.
+
+### Commentary
+
+The concept of labels allows well-identified features to be identified and annotated, with the risk of obscuring other waterfall data. This works well for linear or point structures.
+
+## Example 9
+
+The below annotated waterfall display is a from a blog post by windytan showing a [dialup V.8 bis trasnaction](https://www.windytan.com/2012/11/the-sound-of-dialup-pictured.html). It displays frequency on the y axis, time on the x axis, and signal intensity (with no units displayed) as a colour gradient.
+
+Annotations are shown as rectangular regions of interests, with callout lines to more information, resulting in a very professional and informative presentation..
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/61bdf175-f431-4153-98c4-e8d76b3de228)
+
+Axis labels for time and frequency, as well as day, are indicated on the outside of the waterfall display region. No intensity legend is provided.
+
+### Commentary
+
+Adding the concept of Regions of Importance (ROI), along with a standard visual way of indicating, numbering and associating them with additional information, is very powerful and useful. This works well for any region in time and frequency.
+
+The indication of transaction phases can be generalized into strip charts, with different colours indicating different transaction phases.
+
 # Conclusions
 
 1. Waterfall displays should be provided as a self-contained image. Specifically, they should contain the following:
@@ -134,3 +164,5 @@ The importance of a title block that provides clear attribution and the ability 
 3. I have a preference towards time on the x axis.
 4. Use perceptually uniform colour maps, preferably CET-L20
 5. Grid lines can help, but can also obscure/distort apparant data. Use with care.
+6. Waterfall displays should be combined with other chart types (heat charts, strip charts, flags, etc) as part of a unified visual grammer.
+7. Display of regions of importance should be standardized.
