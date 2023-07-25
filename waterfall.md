@@ -1,4 +1,4 @@
-## Waterfall visualizations overview
+# Overview
 
 Waterfall visualizations represent three dimensions of information as an image on a 2D plane, where one of the dimensions is time.
 
@@ -15,6 +15,8 @@ Zooming in or out allows a larger or smaller region of time and frequency to be 
 Different communities have different conventions regarding which axis should be used for which variable. For example, radio astronomy tends to put time on the x axis, while radio engineering tends to put frequency on the x axis, so that a traditional spectrum analyzer display can be shown above or below the waterfall display.
 
 Adjusting the range of values displayed in the z axis, or changing the mapping between input values and displayed colours allow for certain features to be emphasized.
+
+# Examples
 
 ## Example 1
 
@@ -60,7 +62,7 @@ The small intensity legend obscures far less information than in example 2, but 
 
 Displaying the time grid lines using dashes, with the time values inside the waterfall display region is easily to read and saves space, especially with longer date-time strings. This works best when the size of the waterfall display region is large.
 
-As contentious as the axis debate is, and as strange as it is to see the freqency chart turned on its side, I prefer this axis arrangement, as it allows the waterfall display to be be aligned with other time series, as seen here.
+As contentious as the axis debate is, and as strange as it is to see the frequency chart turned on its side, I prefer this axis arrangement, as it allows the waterfall display to be be aligned with other time series, as seen here.
 
 ## Example 4
 
@@ -76,7 +78,7 @@ The creators of this waterfall missed an opportunity to align the noise amplitud
 
 ## Example 5
 
-The below waterfall display is a screenshot from the [SDR Console](https://www.sdr-radio.com/console) software, version 3. It displays frequency on the x axis, time on the y axis, and signal intensity (with units not displayed) as a colour gradient, with the upper and lower bounds mapped to the ends of the colour gradient being adjustable.
+The below waterfall display is a screenshot from the [SDR Console](https://www.sdr-radio.com/console) software, version 3. It displays frequency on the x axis, time on the y axis, and signal intensity (with no units displayed) as a colour gradient, with the upper and lower bounds mapped to the ends of the colour gradient being adjustable.
 
 ![image](https://github.com/dslik/infoviz-surveys/assets/5757591/c31edb0e-a9db-4a5b-bb6b-8a41a72b5c86)
 
@@ -88,4 +90,47 @@ This shows the more traditional instantaneous frequency intensity on top arrange
 
 A second region is shown overlayed on the x axis (frequency) at the bottom of the screen, which indicates which region is being recorded.
 
+## Example 6
 
+The below waterfall display is from an unknown source, and shows the frequency stability of the NIST WWV carrier over time, which can be used to measure various atmospheric conditions. It displays time on the x axis, frequency on the y axis, and signal intensity (with no units displayed) as a colour gradient.
+
+What is unique about this waterfall is that multiple waterfalls, one for each day, are stacked. This permits easy identification of patterns that occur during the same or similar times each day.
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/515dfa6c-4711-46dd-946e-dd331bc8f4bd)
+
+Axis labels for time and frequency, as well as day, are indicated on the outside of the waterfall display region. No intensity legend is provided.
+
+### Commentary
+
+While this is another example of the versatility of having time on the x axis, it is a bit of an unusual case, as the stacked waterfall displays effectively have time on both the x axis and the y axis.
+
+The below rotated version gives a rough feeling of how this would look if time was on the y axis:
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/efb295a2-187a-4c7a-be80-25e0a9dc1f7c)
+
+As the number of days grows, it is easier to scroll down vs. sideways, so that is a plus for the first variant.
+
+## Example 7
+
+The below waterfall display is a from a report by AJ4CO on [Cassiopeia A Scintillation](https://www.aj4co.org/Publications/Cassiopeia%20A%20Scintillation%20Observed%20by%20Radio%20Jove%20Participants,%20Typinski%20et%20al%20(SARAJ,%202014).pdf). It displays frequency on the y axis, time on the x axis, and signal intensity (with no units displayed) as a colour gradient.
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/217c2237-750e-4846-a201-50f5e29572cb)
+
+Axis labels for time and frequency, as well as the day in a header block, are indicated on the outside of the waterfall display region. No intensity legend is provided.
+
+### Commentary
+
+The importance of a title block that provides clear attribution and the ability to determine the source as part of the image is very important. A summary of key configurations used to capture the data is also helpful for interpretation.
+
+# Conclusions
+
+1. Waterfall displays should be provided as a self-contained image. Specifically, they should contain the following:
+  - A solid region showing the waterfall data
+  - The time axis, preferably in UTC, along either the X or Y axis, with days indicated as part of the timestamps, or in a header
+  - The frequency axis, with units.
+  - An intensity scale, with units
+  - A title block, indicating the source, the time period for the waterfall, and key information about the captured data.
+2. The waterfall display region should have a clear border.
+3. I have a preference towards time on the x axis.
+4. Use perceptually uniform colour maps, preferably CET-L20
+5. Grid lines can help, but can also obscure/distort apparant data. Use with care.
