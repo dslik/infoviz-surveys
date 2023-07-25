@@ -152,6 +152,48 @@ Adding the concept of Regions of Importance (ROI), along with a standard visual 
 
 The indication of transaction phases can be generalized into strip charts, with different colours indicating different transaction phases.
 
+## Example 10 - Histogram in intensity legend
+
+The below waterfall display is a from an unknown source (screenshot from [AARONIA RTSA](https://aaronia.com/en/products/software/rtsa-software). It displays time on the y axis, frequency on the x axis, and signal intensity in dBm as a colour gradient to the right.
+
+The signal intensity legend includes a histogram of how many points on the waterfall are binned into each intensity bucket, as well as allowing adjustment of the mapping of values to colours in the gradient by adjusting the ends and shape of a curve (a common feature in graphics software like Photoshop).
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/9486665c-a050-420c-b773-5a8bf39e69e2)
+
+Axis labels for all three dimensions are provided, two aligned with the waterfall display, with intensity displayed on the side.
+
+### Commentary
+
+Histograms (and PDFs) are underutilized in conjunction with waterfall displays. While AARONIA only does this for intensity, one option worth considering is to display a power histogram and PDF for both the X and Y axis.
+
+## Example 11 - Wrapped waterfalls
+
+The below waterfall display is a screenshot from [AARONIA RTSA]([https://aaronia.com/en/products/software/rtsa-software](https://aaronia.com/media/wysiwyg/RTSA_Suite/12_hr_spectrum_view_full.jpg)). It displays time on the y axis, frequency on the x axis, and signal intensity in dBm as a colour gradient to the right.
+
+This displays multiple waterfalls on the same screen to fit a larger span on the screen at the same time, at the expensive of resolution.
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/8fdf6ce9-2aea-47fe-9064-88c0243279e9)
+
+Axis labels for all three dimensions are provided, two aligned with the waterfall display, with intensity displayed on the side.
+
+### Commentary
+
+AARONIA claims that stacking waterfall displays is "patented", but I couldn't this taught in their public patent filings (WO/2017/121634, US10914771B2, WO/2022/106330, DE102020007046B3).
+
+The basic concept of stacking waterfall displays has significant prior art:
+
+1, Stacking a spectrum goes back to echelle spectrometer, originally developed in the 1890's:
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/08017f94-1c7c-49d7-9d83-470dddae78ec)
+
+Source: https://rsaa.anu.edu.au/observatories/instruments/echelle-spectrograph
+
+2. FlexRadio has been displaying multiple "slices" of a frequency range, allowing a waterfall to be wrapped this way since the mid 2000's:
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/4100d8c2-5fb8-4c3d-89ad-7fc2e632c13d)
+
+Source: https://k9xn.org/2014/08/28/flex-radio-systems-flex-6500/
+
 # Conclusions
 
 1. Waterfall displays should be provided as a self-contained image. Specifically, they should contain the following:
