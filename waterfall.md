@@ -34,7 +34,7 @@ The lack of grid lines makes it difficult to easily identify what time or freque
 
 This waterfall display will act as a baseline for further discussion.
 
-## Example 2 - Legend in watefall region
+## Example 2 - Legend in waterfall region
 
 The below waterfall display is a screenshot from the [SDR Data File Analyzer](https://www.sdr-radio.com/analyser) software. It displays frequency on the x axis, time on the y axis, and signal intensity in dBm as a grey scale gradient.
 
@@ -152,7 +152,21 @@ Adding the concept of Regions of Importance (ROI), along with a standard visual 
 
 The indication of transaction phases can be generalized into strip charts, with different colours indicating different transaction phases.
 
-## Example 10 - Histogram in intensity legend
+## Example 10 - Auto-generated Annotated Regions
+
+Unlike the above hand-created annotations, the below [5G recording](https://destevez.net/2023/12/an-annotated-5g-sigmf-recording/) waterfall rendered using [inspectrum](https://github.com/miek/inspectrum) has regions of importance (including nested regions) that are specified in and rendered from a [Signals Metadata Format](https://github.com/sigmf/SigMF) file. It displays frequency offset from a centre frequency on the y axis, time (in seconds) since the start of the capture on the x axis, and signal intensity (with no units displayed) as a colour gradient.
+
+Annotations of regions of importance are indicated with white boxes, with a label above the top-left of each box.
+
+![image](https://github.com/dslik/infoviz-surveys/assets/5757591/c27edb04-49a4-4475-8650-258c83ca0f57)
+
+Axis labels for time and frequency are indicated on the inside of the waterfall display region. No intensity legend is provided.
+
+### Commentary
+
+This demonstrates the value of being able to automatically extract, visualize and interact with waterfall annotations. Using this approach, different regions (in this example, different 5G packets), could then be selected by the user to see packet-specific decoding or further packet-specific visualizations. Selecting an annotated region could also show relationships between different regions, such as sequence and/or inter-packet data or timing dependencies.
+
+## Example 11 - Histogram in intensity legend
 
 The below waterfall display is a from an unknown source (screenshot from [AARONIA RTSA](https://aaronia.com/en/products/software/rtsa-software). It displays time on the y axis, frequency on the x axis, and signal intensity in dBm as a colour gradient to the right.
 
@@ -166,7 +180,7 @@ Axis labels for all three dimensions are provided, two aligned with the waterfal
 
 Histograms (and PDFs) are underutilized in conjunction with waterfall displays. While AARONIA only does this for intensity, one option worth considering is to display a power histogram and PDF for both the X and Y axis.
 
-## Example 11 - Wrapped waterfalls
+## Example 12 - Wrapped waterfalls
 
 The below waterfall display is a screenshot from [AARONIA RTSA]([https://aaronia.com/en/products/software/rtsa-software](https://aaronia.com/media/wysiwyg/RTSA_Suite/12_hr_spectrum_view_full.jpg)). It displays time on the y axis, frequency on the x axis, and signal intensity in dBm as a colour gradient to the right.
 
@@ -182,7 +196,7 @@ AARONIA claims that stacking waterfall displays is "patented", but I couldn't th
 
 The basic concept of stacking waterfall displays has significant prior art:
 
-1, Stacking a spectrum goes back to echelle spectrometer, originally developed in the 1890's:
+1. Stacking a spectrum goes back to echelle spectrometer, originally developed in the 1890's:
 
 ![image](https://github.com/dslik/infoviz-surveys/assets/5757591/08017f94-1c7c-49d7-9d83-470dddae78ec)
 
@@ -207,4 +221,4 @@ Source: https://k9xn.org/2014/08/28/flex-radio-systems-flex-6500/
 4. Use perceptually uniform colour maps, preferably CET-L20
 5. Grid lines can help, but can also obscure/distort adjacent data. Use with care.
 6. Waterfall displays should be combined with other chart types (heat charts, strip charts, flags, etc) as part of a unified visual grammar.
-7. Display of regions of importance should be standardized.
+7. Display of regions of importance should be standardized, and can be used to link to/embed further data-specific visualizations.
